@@ -39,9 +39,9 @@ class UserController extends Controller
 
         $user = User::findOrfail($id);
 
-        $updatedUser = $user->update($validated);
+        $user->update($validated);
 
-        return new UserResource($updatedUser);        
+        return new UserResource($user);        
     }
 
     public function delete ($id) {

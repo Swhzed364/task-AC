@@ -53,6 +53,8 @@ class PostController extends Controller
         $post = Post::findOrFail($id);
 
         $post->update($validated);
+
+        return new PostResouce($post);
     }
 
     public function show ($id)

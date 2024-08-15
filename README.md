@@ -22,6 +22,8 @@
 
     localhost:8080/pulic/index.php/user/store?name={name}&email={email}&password={password}
 
+Method: POST
+
 ---
 
 #### Чтение
@@ -30,11 +32,15 @@
 
     localhost:8080/pulic/index.php/user/{user_id}
 
+Method: GET
+
 ---
 
 #### Изменение
 
     localhost:8080/pulic/index.php/user/update/{user_id}?name={name}&email={email}&password={password}
+
+Method: PATCH
 
 ---
 
@@ -42,11 +48,15 @@
 
     localhost:8080/pulic/index.php/user/destroy/{user_id}
 
+Method: DELETE
+
 ---
 
 #### Авторизация
 
     localhost:8080/pulic/index.php/login?email={email}&password={password}
+
+Method: POST
 
 ---
 
@@ -56,6 +66,8 @@
 #### Создание
 
     localhost:8080/pulic/index.php/post/store?title={title}&body={body}&author_id={user_id}
+
+Method: POST
 
 ---
 
@@ -68,6 +80,8 @@
 ##### Получить список постов
 
     localhost:8080/pulic/index.php/post
+
+Method: GET
 
 Сортировка
 
@@ -107,11 +121,15 @@
 
     localhost:8080/pulic/index.php/post/update/{post_id}?title={title}&body={body}&author_id={user_id}
 
+Method: PATCH
+
 ---
 
 #### Удаление
 
     localhost:8080/pulic/index.php/post/destroy/{post_id}
+
+Method: DELETE
 
 ---
 
